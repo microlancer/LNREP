@@ -30,3 +30,8 @@ An arbitration case is opened when there is a dispute. Both parties submit their
 
 For successful transactions, both parties will gain a reputation score, as well as the arbitrator reputation (for responsiveness). For disputes, the arbitrator will receive a more comprehensive reputation score that includes a review from both parties on the outcome. Since it is likely that a dispute makes both parties unhappy with the resolution, this is taken into account with remarks in response to the review. 
 
+## Web-of-Trust
+
+After successful transactions with or without arbitration, the participants can rate other nodes on their experience. They can allocate a trust-level between 0-100 indicating the level of trust they have with the other party. The system can then determine how much overall trust a single node has, against all other nodes. This can give some, but not perfect, insight into the reliability of a given agent.
+
+At the end of the day, trust networks are subject to manipulation. Collusion can exist between a trader and arbitrator, or a fake reputation could be built in a sybil-attack way. So, due diligence is required.
