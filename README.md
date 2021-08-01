@@ -5,12 +5,20 @@ LNREP - A draft specification of the LN Reputation and Arbitration Network proto
 
 LNREP defines communication rules between LNREP nodes. Each LNREP node assumes a Lightning Network node exists, and could be implemented as a plugin of the lightning node, or independent daemon. An LNREP is associated to an identity, and the identity is identified by the lightning node's pubkey. The reputation, history, esrow score, etc. are all associated to the node.
 
+The purpose of the protocol is to make it easy to:
+
+* Discover reputation of nodes (both as a trader or arbitrator)
+* Select from available arbitrators (escrow agents)
+* Complete multisig or HTLC-HODL transactions
+
+This system could become the backbone for other more advanced applications such as a decentralized exchange, or decentralized freelancing marketplace, and other such activities that require reputation or escrow.
+
 ## Nodes 
 
 An LNREP-enabled Lightning node can run as:
 
-* Client-only
-* Client + Arbitrator
+* Trader-only
+* Trader and Arbitrator
 
 Nodes in the arbitration network can receive income for participating in 2-of-3 (or other n-of-m) multisignature transactions. The job of arbitrators is to assist in resolving disputes, generally following agnostic procedures and code of conduct. Each arbitration node will have a reputation score based on the number of successful dispute resolutions.
 
